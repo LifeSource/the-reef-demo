@@ -1,4 +1,6 @@
 ### The Reef Demo
+This is a simple demo page that takes an existing design and port it to use the lightweight UIKit front-end framework.
+
 
 #### Disclaimer
 I do not own or claim to own the copyright material used on this demo page. All copyrights belong content to their respective owners.
