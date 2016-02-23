@@ -1,0 +1,63 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ------------------------------------------------------------ */
+/* Header and Navigation                                        */
+/* ------------------------------------------------------------ */
+
+header {
+    padding: 33px;
+    color: #1b365d;
+    line-height: 40px;
+    background-color: #F37163;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.header-contact-info {
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.phone {
+    font-size: 1.57143em;
+    display: inline-block;
+}
+
+.uk-grid {
+    background: url("http://www.thereef.net.au/img/bg-dots.png") no-repeat bottom-right;
+}
+
+/* ------------------------------------------------------------ */
+/* Hero Section                                                 */
+/* ------------------------------------------------------------ */
+
+.hero {
+    background: url("http://www.thereef.net.au/img/hero-overlay.png") no-repeat;
+}
+
+/* ------------------------------------------------------------ */
+/* Home Content                                                 */
+/* ------------------------------------------------------------ */
+.home-content {
+}
+
+/* ------------------------------------------------------------ */
+/* Featured Items                                               */
+/* ------------------------------------------------------------ */
+
+section.news {
+    background: #f1f1f1 url("http://www.thereef.net.au/img/bg-news.jpg") no-repeat center right;
+}
+
+footer {
+    min-height: 308px;
+    background-color: #F37163;
+}
