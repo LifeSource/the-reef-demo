@@ -195,7 +195,7 @@ section.news h3 {
     background: #ffffff;
 }
 
-.more-news {
+section.news .more-news {
     margin-top: 20px;
     font-size: 1.5em;
     color: #F37163;
@@ -203,7 +203,7 @@ section.news h3 {
     background: #ffffff;
 }
 
-.more-news:hover {
+section.news .more-news:hover {
     color: #ffffff;
     background: #1b365d;
     transition: all 0.8s ease-in;
