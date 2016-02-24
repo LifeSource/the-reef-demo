@@ -3,7 +3,7 @@ This is a simple demo page that takes an existing design and port it to use the 
 
 
 #### Disclaimer
-I do not own or claim to own the copyright material used on this demo page. All copyrights belong content to their respective owners.
+I do not own or claim to own the copyright material used on this demo page. All copyrights materials belong to their respective owners.
 
 
 ### Pre-requisites
