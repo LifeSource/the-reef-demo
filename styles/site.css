@@ -2,9 +2,9 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-.text-center {
-    text-align: center;
-}
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-bold { font-weight: bold; }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -22,8 +22,8 @@ h2 {
 }
 
 h3 {
-    font-size: 1.14286em;
     color: #1b365d;
+    font-size: 1.14286em;
 }
 
 /* ------------------------------------------------------------ */
@@ -39,9 +39,13 @@ header {
 
 header a, header a:link
 {
-    font-weight: 700;
+    font-weight: bold;
     text-decoration: none;
     transition: background 0.5s ease-in;
+}
+
+ul.uk.navbar-nav>li>a {
+    font-size: 2.7em;
 }
 
 .header-contact-info {
@@ -55,11 +59,25 @@ header a, header a:link
     font-size: 1.07143em;
 }
 
+
 .phone { 
     font-size: 1.57143em; 
     display: inline-block;
 }
+
 .phone span { color: #1b365d; }
+
+span.register-interest {
+    color: white;
+    padding: 0 10px;
+    display: inline-block;
+    background-color: #1b365d;
+}
+
+span.register-interest:hover {
+    background: #2968c6;
+    transition: background 0.5s ease-in;
+}
 
 header .uk-grid {
     padding: 0 10px;
@@ -70,17 +88,56 @@ header .uk-grid {
 /* Hero Section                                                 */
 /* ------------------------------------------------------------ */
 
-.hero {
+section.hero {
 }
 
-.hero .hero-overlay {
+.hero-overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 644px;
+    max-width: 644px;
+    height: 525px;
+    padding: 0 60px 0 225px;
     background: transparent url("http://www.thereef.net.au/img/hero-overlay.png") no-repeat;
+    font-weight: 400;
+}
+
+.hero-caption {
+    font-style: italic;
+    color: #ffffff;
+    position: relative;
+    transform: translateY(-50%);
+    line-height: 1;
+    top: 46%;
+}
+
+.hero-caption-title {
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.sizzler {
+    position: absolute;
+    top: 10px;
+    left: 600px;
+    z-index: 100;
 }
 
 /* ------------------------------------------------------------ */
 /* Home Content                                                 */
 /* ------------------------------------------------------------ */
-.home-content {
+.home-content h1, 
+.home-content h2{
+    color: #F37163;
+    font-size: 2.78571em;
+}
+
+.home-content h3 {
+    color: #1b365d;
+    font-size: 1.24286em;
+    line-height: 1.25em;
 }
 
 /* ------------------------------------------------------------ */
@@ -88,13 +145,29 @@ header .uk-grid {
 /* ------------------------------------------------------------ */
 
 section.featured-items-container {
-    height: 377px;
+    min-height: 377px;
     padding: 40px 0;
     background: #1b365d url("http://www.thereef.net.au/img/bg-featured.jpg") no-repeat center right;
 }
 
+div.featured-item {
+    padding-bottom: 30px;
+}
+
+.featured-caption div {
+    color: #ffffff;
+    font-size: 2.7em;
+    line-height: 1.2em;
+}
+
+.featured-items-container a, 
+.featured-items-container a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /* ------------------------------------------------------------ */
-/* News Items                                               */
+/* News Items                                                   */
 /* ------------------------------------------------------------ */
 section.news {
     background: #f1f1f1 url("http://www.thereef.net.au/img/bg-news.jpg") no-repeat center right;
@@ -122,11 +195,61 @@ section.news h3 {
     background: #ffffff;
 }
 
+.more-news {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #F37163;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.more-news:hover {
+    color: #ffffff;
+    background: #1b365d;
+    transition: all 0.8s ease-in;
+}
+
+/* ------------------------------------------------------------ */
+/* Registration Form                                            */
+/* ------------------------------------------------------------ */
+
+.register-form {
+    color: #ffffff;
+    background: #05C3D3;
+}
+
+.register-form h1, 
+.register-form h2 {
+    color: #ffffff;
+}
 
 /* ------------------------------------------------------------ */
 /* Footer                                                       */
 /* ------------------------------------------------------------ */
 footer {
+    color: #ffffff;
     min-height: 308px;
-    background-color: #F37163;
+    font-size: 1.2em;
+    background: #F37163 url("http://www.thereef.net.au/img/bg-footer.jpg") no-repeat top right;
+}
+
+footer h1, footer h2 {
+    color: #ffffff;
+}
+
+footer ul li {
+    line-height: 1.5em;
+}
+
+footer span.fa {
+    color: #1b365d;
+}
+
+footer a, footer a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-logo-section {
+    margin-top: 80px;
 }
